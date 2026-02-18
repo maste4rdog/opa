@@ -11,5 +11,5 @@ allow {
 }
 
 allow {
-  input.username == data.external.userssss[_].username
+  input.username == data.users[_].username
 }
