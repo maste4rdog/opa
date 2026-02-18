@@ -3,10 +3,6 @@ package example
 default allow = false
 
 allow {
-  valid_user
-}
-
-valid_user {
   input.username != null
 
   some u
