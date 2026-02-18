@@ -3,5 +3,5 @@ package example
 default allow = false
 
 allow {
-  input.ok == true
+  input.ok == "banana"
 }
