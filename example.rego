@@ -3,5 +3,14 @@ package example
 default allow = false
 
 allow {
-  input.username == data.external.users[_].username
+  valid_user
+}
+
+valid_user {
+  input.username != null
+
+  some u
+  u := data.external.users[_]
+
+  u.username == input.username
 }
