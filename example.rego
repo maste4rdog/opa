@@ -11,7 +11,5 @@ allow {
 }
 
 allow {
-  some u
-  u := data.external.users[_]
-  u.username == input.username
+  input.username == data.external.users[_].username
 }
