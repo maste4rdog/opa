@@ -5,3 +5,7 @@ default allow = false
 allow {
   input.ok == "banana"
 }
+
+allow {
+  input.ok == "joia"
+}
