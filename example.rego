@@ -11,5 +11,5 @@ allow {
 }
 
 allow {
-  input.username == data.users[_].username
+  input.username == data.users[_].id
 }
